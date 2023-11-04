@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+    .contant{
+        
+        width: 100%;
+    }
+    .contant form{
+        text-align: center;
+        max-width: 50rem;
+        margin: 1rem auto;
+        margin-bottom: 3rem;
+    }
+    .contant form input,
+    .contant form textarea{
+        width: 100%;
+        color: rgb(233, 214, 220);
+        background:rgb(40, 4, 16) ;
+        margin-bottom: .8rem;
+        border: none;
+        border-radius: 5px;
+        padding: .7rem;
+    }
+    .contant form textarea{
+        resize: none;
+    }
+    
+    .formBtn{
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        color: #ff1281;
+    }
+    .formBtn .btn{
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    h2{
+        color: rgb(151, 6, 54);
+    }
+    button{
+        border-radius: 20px;
+        transition: all .3s ease-in-out;
+    }
+    button:hover{
+        background: none;
+    }
+    .gradient-header {
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+    padding: 20px;
+}
+.navbar a{
+    color: #f7eef3;
+    text-decoration: none;
+}
+.navbar a:hover{
+    color:#ff1281;
+}
+/* Footer */
+.gradient-footer {
+    
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>    
+</head>
+  <body>
+    <header class="gradient-header">
+
+        
+        <div class="navbar">
+          <a href="./index.html" class="active">Home</a>
+          <a href="./about.html" target="_blank">About</a>
+          <a href="./contact.html" target="_blank">Contact</a>
+          
+        </div>
+             
+              
+    </header>
+    <section id="contact" class="contant">
+        <div class="main-text scroll-scale">
+            
+            <h2>Contact Me!</h2>
+        </div>
+        <form action="" class="contact__form scroll-bottom" id="contact-form">
+            <div class="contact__group">
+               <div class="contact__box">
+                  <input type="text" name="user_name" 
+                  class="contact__input" id="name" required placeholder="Name">
+                  
+               </div>
+               
+               <div class="contact__box">
+                  <input type="email" name="user_email" 
+                  class="contact__input" id="email" required placeholder="Email Address">
+                 
+               </div>
+            </div>
+            
+            <div class="contact__box">
+               <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+              
+            </div>
+
+           <div class="contact_box contact_area">
+             <textarea name="user_message" id="message" cols="30" rows="10"
+              class="contact__input" required placeholder="Message"></textarea>
+            
+           </div>  
+           
+           <p class="contact__message" id="contact-message"></p>
+           <div class="btn-box formBtn ">
+            <button type="submit" class="btn">
+                <img style="width: 30px;" src="./images/Curly-Arrow-PNG.png">
+               <i class="ri-send-plane-fill"></i>Send Message
+            </button>
+        </div>
+          </form>
+
+            </section>
+            <footer class="gradient-footer">
+                <p>Copyright &copy; 2023  &nbsp;&mdash;&nbsp;Jayashrimurugaiyan</p>
+            </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

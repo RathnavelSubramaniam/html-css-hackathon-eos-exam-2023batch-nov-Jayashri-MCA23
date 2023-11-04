@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .carousel-inner{
+        width: 100%;
+    }
+    .carousel-inner img{
+width: 100%;
+height: 200px;
+    }
+    .card{
+        margin: 60px;
+        margin-left: 25%;
+        align-content: center;
+        display: block;
+    }
+    .gradient-header {
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+    padding: 20px;
+}
+
+/* Footer */
+.gradient-footer {
+    
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+color: white;
+    text-align: center;
+    padding: 10px;
+}
+.navbar a{
+    text-decoration: none;
+    border-radius: 10px;
+    color: #d0b4c3;
+
+}
+.navbar a:hover{
+    
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 900px) {
+    .arrow{
+        display: none;
+    }
+    
+}
+  </style>
+</head>
+  <body>
+    <header class="gradient-header">
+
+        
+        <div class="navbar">
+          <a href="./index.html" class="active">Home</a>
+          <a href="./about.html" target="_blank">About</a>
+          <a href="./contact.html" target="_blank">Contact</a>
+          
+        </div>
+             
+              
+    </header>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/slide1.svg" class="d-block w-100" alt="..."><br>
+            <img class="arrow" style="width: 20%;padding-left: 100px;" src="./images/pngegg.png">
+            <div class="carousel-caption d-none d-md-block">
+                
+              <h5>Accept Online Bookings 24/7</h5>
+              <p>Keep your booking channels open 24/7 and let your clients book their appointments 
+                via multiple channels like your booking website, business website, Facebook, Instagram or Google Business Profile.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/slide2.svg" class="d-block w-100" alt="..."><br>
+            <img class="arrow" style="width: 20%;padding-left: 100px;" src="./images/pngegg.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Reduce no shows & Double bookings</h5>
+              <p>Send tailored reminders before scheduled appointments. Eliminate last-minute cancellations by charging a deposit upfront. 
+                Avoid double booking your time by synchronising your personal calendar with your online booking schedule</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slife3.svg" class="d-block w-100" alt="..."><br>
+            <img class="arrow" style="width: 20%;padding-left: 100px;" src="./images/pngegg.png">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Facebook, Instagram & Googl</h5>
+              <p>Accept appointments via your Facebook page and Instagram profile via a
+                 "Book Now" button. Let people easily find your business on Google where they can immediately book your services</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="./images/card1.svg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Stay on Top of Your Business</h5>
+                  <p class="card-text">Monitor the number of site visits and compare it with the number of bookings you receive. Keep abreast of your most popular services and your busiest providers. For the tech-savvy, you can connect with Google Tag Manager.</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./images/card2.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Manage your day-to-day business via the Admin App</h5>
+              <p class="card-text">In the admin app, you can see your booking calendar, upcoming bookings, recently scheduled appointments, client list and scan tickets. Also, you can create, edit, and cancel bookings and clients. Moreover, you can do it all quickly and easily while on the move.</p>
+             </div>
+          </div>
+        </div>
+      </div><div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./images/card3.svg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Manage Your Employees and Related Resources</h5>
+              <p class="card-text">Manage your employee schedules, break times, vacations times, and allocate services they can provide. Send your employees reminders and notifications when appointments are booked, rescheduled and cancelled. You can assign different levels of admin access, depending on the changes you want to allow them
+                 to make to the system. If you have any limited resources, like rooms, no worries, you can easily set that up too.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="gradient-footer">
+        <p>Copyright &copy; 2023  &nbsp;&mdash;&nbsp;Jayashrimurugaiyan</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

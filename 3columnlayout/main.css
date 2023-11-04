@@ -1,0 +1,209 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container h3{
+    color:rgb(151, 6, 54) ;
+}
+ a{
+    color:black ;
+    text-decoration: none;
+    text-transform: none;
+} a:hover{
+    color:#ff2aa3 !important;
+}
+li{
+    list-style-type: none;
+}
+h1{
+    color:rgb(151, 6, 54) ;
+}
+/* Header */
+.gradient-header {
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: sticky;
+    color: white;
+    padding: 20px;
+}
+
+/* Footer */
+.gradient-footer {
+    
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #33001b, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #33001b, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Horizontal Menu */
+/* .horizontal-menu ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.horizontal-menu ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+.horizontal-menu ul li a:hover{
+    cursor: pointer;
+    
+    box-shadow:2px 2px 2px 2px #0b3233;
+} */
+.welcome_image img{
+    position: relative;
+}
+.welcome_image div{
+    position: absolute;
+    top: 37%;
+    font-style: italic;
+    color:rgb(151, 6, 54);
+    font-weight: 900;
+    left:5%;
+    
+}
+.welcome_image h5,h6{
+    top: 37%;
+    font-size: small;
+}
+.welcome_image button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(151, 6, 54);
+    
+    border: 2px solid wheat;
+}
+button:hover{
+    background: none;
+}
+/* Main Section and Sidebars */
+.main-section, .sidebar {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Float Image */
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+/* Add your custom styles */
+/* Header */
+
+
+/* Navbar Styling
+.navbar {
+    transition: top 0.3s;
+} */
+
+/* Media Queries */
+@media (max-width: 1300px) {
+    .welcome_image div{
+        top:45%;
+      }
+}
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-collapse {
+        max-height: 0;
+        transition: max-height 0.35s ease-out;
+        overflow: hidden;
+    }
+    .navbar-toggler {
+        order: -1;
+    }
+    .navbar-toggler:focus+.navbar-collapse {
+        max-height: 200px;
+    }
+    .welcome_image div{
+        top:25%;
+      }
+}
+
+  
+  /* Add responsiveness - will display vertically on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    .navbar a:not(.toggle) {display: none;}
+    .navbar a.toggle {
+      float: right;
+      display: block;
+    }
+    .welcome_image h5,h6,button{
+        font-size: xx-small;
+      }
+      .welcome_image img{
+        height: 2%;
+      }
+      .welcome_image div{
+        top:5%;
+      }
+  }
+  
+.navbar {
+
+    overflow: hidden;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the "icon" link for when the navigation bar needs to be collapsed into a toggle menu (for smaller screens) */
+  .navbar .icon {
+    display: none;
+  }
+  
+  /* Use a media query to add a breakpoint at 600px: */
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* When the screen is less than 600 pixels wide, make the navigation links stack vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
